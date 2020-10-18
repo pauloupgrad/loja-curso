@@ -1,14 +1,26 @@
 header{    
-    background: $amarelo;
+    background: $branco;
+    height: 90px;
+    border-bottom: 5px solid $rosa;
     section{
         article{
-            height: 70px;            
-            .logo{
+                        
+            .logo{ 
+                display: flex;
+                align-items: center;
+                padding: 0;
+             
+                img{
+                    width: 50px;                    
+                    margin-right: 10px;
+                }
+              
                 a{
                     text-decoration: none;
-                    color: $preto;
-                    font-size: 24px;
-                    text-transform: uppercase;                  
+                    color: $rosa;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-family: 'Anton', sans-serif;                  
                                         
                 }
             }
@@ -17,6 +29,7 @@ header{
                     width:100%;
                     border: 0;
                     background: #fff;
+                    border: 1px solid rgb(216, 210, 210);
                     border-radius: 100px;
                     padding:5px 20px;
                 }
@@ -28,7 +41,7 @@ header{
                     right: 27px;
                     cursor:pointer;
                     &:hover i{
-                        color: $preto;                        
+                        color: $rosa;                        
                     }
                 }
 
@@ -41,6 +54,7 @@ header{
                     span.contidade{
                         position: absolute;
                         top: -12px;
+                        right: 76px;
                         border-radius: 100%;
                         background: $vermelho;
                         width: 15px;
@@ -57,7 +71,7 @@ header{
                             color: $preto;
                             text-decoration: none !important;
                             &:hover{
-                                color: rgba(0,0,0,.5) !important;
+                                color: $rosa;
                             }
                         }
                     }

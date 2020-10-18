@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Sansita+Swashed:wght@300;500&display=swap");
 :root {
   --blue:#007bff;
   --indigo:#6610f2;
@@ -15123,6 +15124,13 @@ a.text-dark:focus, a.text-dark:hover {
   font-weight: 900;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -15130,21 +15138,31 @@ body {
 
 /* Componentes */
 header {
-  background: #f0b027;
+  background: #fff;
+  height: 90px;
+  border-bottom: 5px solid #FDBEB5;
 }
-header section article {
-  height: 70px;
+header section article .logo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+header section article .logo img {
+  width: 50px;
+  margin-right: 10px;
 }
 header section article .logo a {
   text-decoration: none;
-  color: #222;
-  font-size: 24px;
+  color: #FDBEB5;
+  font-size: 20px;
   text-transform: uppercase;
+  font-family: "Anton", sans-serif;
 }
 header section article form input {
   width: 100%;
   border: 0;
   background: #fff;
+  border: 1px solid #d8d2d2;
   border-radius: 100px;
   padding: 5px 20px;
 }
@@ -15157,7 +15175,7 @@ header section article form .btn-search {
   cursor: pointer;
 }
 header section article form .btn-search:hover i {
-  color: #222;
+  color: #FDBEB5;
 }
 header section article nav ul {
   margin-top: 14px;
@@ -15166,6 +15184,7 @@ header section article nav ul {
 header section article nav ul span.contidade {
   position: absolute;
   top: -12px;
+  right: 76px;
   border-radius: 100%;
   background: #e73a23;
   width: 15px;
@@ -15184,7 +15203,7 @@ header section article nav ul li a {
   text-decoration: none !important;
 }
 header section article nav ul li a:hover {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: #FDBEB5;
 }
 
 /*# sourceMappingURL=style.css.map */
