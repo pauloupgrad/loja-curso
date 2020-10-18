@@ -1,0 +1,70 @@
+header{    
+    background: $amarelo;
+    section{
+        article{
+            height: 70px;            
+            .logo{
+                a{
+                    text-decoration: none;
+                    color: $preto;
+                    font-size: 24px;
+                    text-transform: uppercase;                  
+                                        
+                }
+            }
+            form{
+                input{
+                    width:100%;
+                    border: 0;
+                    background: #fff;
+                    border-radius: 100px;
+                    padding:5px 20px;
+                }
+                .btn-search{
+                    background: none;
+                    border: none;
+                    position: absolute;
+                    top:5px;
+                    right: 27px;
+                    cursor:pointer;
+                    &:hover i{
+                        color: $preto;                        
+                    }
+                }
+
+            }
+            nav{
+            
+                ul{                    
+                    margin-top: 14px;
+                    position: relative;
+                    span.contidade{
+                        position: absolute;
+                        top: -12px;
+                        border-radius: 100%;
+                        background: $vermelho;
+                        width: 15px;
+                        height: 15px;
+                        font-size: 10px;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 15px;
+                    }
+                    li{
+                        list-style: none;
+                        margin-right: 20px;
+                        a{
+                            color: $preto;
+                            text-decoration: none !important;
+                            &:hover{
+                                color: rgba(0,0,0,.5) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
