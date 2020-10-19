@@ -1,7 +1,7 @@
 header{    
-    background: $branco;
+    background: $roxo;    
     height: 90px;
-    border-bottom: 5px solid $rosa;
+    border-bottom: 5px solid $roxo-hover;
     section{
         article{
                         
@@ -17,11 +17,15 @@ header{
               
                 a{
                     text-decoration: none;
-                    color: $rosa;
+                    color: $branco;
                     font-size: 20px;
                     text-transform: uppercase;
-                    font-family: 'Anton', sans-serif;                  
-                                        
+                    font-family: 'Anton', sans-serif;
+                    @include text-shadow(1px, 1px, 1px, $cinza);                  
+                    &:hover{
+                        color: $roxo-hover;
+                        @include text-shadow(1px, 1px, 2px, $branco);
+                    }                    
                 }
             }
             form{
@@ -41,7 +45,7 @@ header{
                     right: 27px;
                     cursor:pointer;
                     &:hover i{
-                        color: $rosa;                        
+                        color: $roxo-hover;                        
                     }
                 }
 
@@ -53,14 +57,14 @@ header{
                     position: relative;
                     span.contidade{
                         position: absolute;
-                        top: -12px;
+                        top: -13px;
                         right: 76px;
                         border-radius: 100%;
                         background: $vermelho;
                         width: 15px;
                         height: 15px;
                         font-size: 10px;
-                        color: #fff;
+                        color: $branco;
                         text-align: center;
                         line-height: 15px;
                     }
@@ -68,10 +72,12 @@ header{
                         list-style: none;
                         margin-right: 20px;
                         a{
-                            color: $preto;
-                            text-decoration: none !important;
+                            color: $branco;
+                            text-decoration: none !important;                            
+                            @include text-shadow(1px, 1px, 2px, $preto); 
                             &:hover{
-                                color: $rosa;
+                                color: $roxo-hover;
+                                @include text-shadow(1px, 1px, 1px, $branco);
                             }
                         }
                     }

@@ -1,8 +1,10 @@
 @import "bootstrap.scss";
 @import "fontawesome.all.min.scss";
 @import "variaveis.scss";
+@import "mixin.scss";
 @import "config.scss";
 
 
 /* Componentes */
 @import "header.scss";
+@import "slide.scss";

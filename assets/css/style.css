@@ -15138,9 +15138,9 @@ body {
 
 /* Componentes */
 header {
-  background: #fff;
+  background: #BC79FF;
   height: 90px;
-  border-bottom: 5px solid #FDBEB5;
+  border-bottom: 5px solid #AE5EFF;
 }
 header section article .logo {
   display: flex;
@@ -15153,10 +15153,15 @@ header section article .logo img {
 }
 header section article .logo a {
   text-decoration: none;
-  color: #FDBEB5;
+  color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   font-family: "Anton", sans-serif;
+  text-shadow: 1px 1px 1px #666;
+}
+header section article .logo a:hover {
+  color: #AE5EFF;
+  text-shadow: 1px 1px 2px #fff;
 }
 header section article form input {
   width: 100%;
@@ -15175,7 +15180,7 @@ header section article form .btn-search {
   cursor: pointer;
 }
 header section article form .btn-search:hover i {
-  color: #FDBEB5;
+  color: #AE5EFF;
 }
 header section article nav ul {
   margin-top: 14px;
@@ -15183,7 +15188,7 @@ header section article nav ul {
 }
 header section article nav ul span.contidade {
   position: absolute;
-  top: -12px;
+  top: -13px;
   right: 76px;
   border-radius: 100%;
   background: #e73a23;
@@ -15199,11 +15204,17 @@ header section article nav ul li {
   margin-right: 20px;
 }
 header section article nav ul li a {
-  color: #222;
+  color: #fff;
   text-decoration: none !important;
+  text-shadow: 1px 1px 2px #222;
 }
 header section article nav ul li a:hover {
-  color: #FDBEB5;
+  color: #AE5EFF;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.slide-box {
+  height: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */
