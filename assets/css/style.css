@@ -15124,6 +15124,7 @@ a.text-dark:focus, a.text-dark:hover {
   font-weight: 900;
 }
 
+/* Backgrounds */
 * {
   margin: 0;
   padding: 0;
@@ -15138,30 +15139,28 @@ body {
 
 /* Componentes */
 header {
-  background: #BC79FF;
-  height: 90px;
-  border-bottom: 5px solid #AE5EFF;
+  background: #222;
+  min-height: 90px;
 }
-header section article .logo {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-header section article .logo img {
-  width: 50px;
-  margin-right: 10px;
-}
-header section article .logo a {
+header section article a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   font-family: "Anton", sans-serif;
   text-shadow: 1px 1px 1px #666;
 }
-header section article .logo a:hover {
+header section article a img {
+  width: 50px;
+  margin-right: 10px;
+}
+header section article a:hover {
   color: #AE5EFF;
   text-shadow: 1px 1px 2px #fff;
+  text-decoration: none;
+}
+header section article form {
+  margin: 5px 0;
 }
 header section article form input {
   width: 100%;
@@ -15175,8 +15174,7 @@ header section article form .btn-search {
   background: none;
   border: none;
   position: absolute;
-  top: 5px;
-  right: 27px;
+  right: 30px;
   cursor: pointer;
 }
 header section article form .btn-search:hover i {
@@ -15189,7 +15187,7 @@ header section article nav ul {
 header section article nav ul span.contidade {
   position: absolute;
   top: -13px;
-  right: 76px;
+  right: 57px;
   border-radius: 100%;
   background: #e73a23;
   width: 15px;
@@ -15201,9 +15199,12 @@ header section article nav ul span.contidade {
 }
 header section article nav ul li {
   list-style: none;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 header section article nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-transform: none;
   color: #fff;
   text-decoration: none !important;
   text-shadow: 1px 1px 2px #222;
@@ -15214,7 +15215,29 @@ header section article nav ul li a:hover {
 }
 
 .slide-box {
-  height: 600px;
+  height: 200px;
+}
+
+nav.nav-produtos {
+  background: #E8AE00;
+  color: #fff;
+  margin-bottom: 5px;
+}
+nav.nav-produtos ul.nav li {
+  font-size: 14px;
+  position: relative;
+  padding: 7px 0;
+}
+nav.nav-produtos ul.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav.nav-produtos ul.nav li a i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+nav.nav-produtos ul.nav li ul.nav {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

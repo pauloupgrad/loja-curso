@@ -1,34 +1,29 @@
 header{    
-    background: $roxo;    
-    height: 90px;
-    border-bottom: 5px solid $roxo-hover;
+    background: $preto;    
+    min-height: 90px;    
     section{
-        article{
-                        
-            .logo{ 
-                display: flex;
-                align-items: center;
-                padding: 0;
-             
-                img{
-                    width: 50px;                    
-                    margin-right: 10px;
-                }
+        article{ 
               
                 a{
+                    img{
+                        width: 50px;                    
+                        margin-right: 10px;
+                        
+                    }
                     text-decoration: none;
                     color: $branco;
-                    font-size: 20px;
+                    font-size: 16px;
                     text-transform: uppercase;
                     font-family: 'Anton', sans-serif;
                     @include text-shadow(1px, 1px, 1px, $cinza);                  
                     &:hover{
                         color: $roxo-hover;
                         @include text-shadow(1px, 1px, 2px, $branco);
-                    }                    
+                        text-decoration: none;                                       
                 }
             }
             form{
+                margin: 5px 0;
                 input{
                     width:100%;
                     border: 0;
@@ -40,9 +35,8 @@ header{
                 .btn-search{
                     background: none;
                     border: none;
-                    position: absolute;
-                    top:5px;
-                    right: 27px;
+                    position: absolute;                    
+                    right: 30px;
                     cursor:pointer;
                     &:hover i{
                         color: $roxo-hover;                        
@@ -58,7 +52,7 @@ header{
                     span.contidade{
                         position: absolute;
                         top: -13px;
-                        right: 76px;
+                        right: 57px;
                         border-radius: 100%;
                         background: $vermelho;
                         width: 15px;
@@ -70,8 +64,11 @@ header{
                     }
                     li{
                         list-style: none;
-                        margin-right: 20px;
+                        margin-left: 20px;
                         a{
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 14px;
+                            text-transform: none;
                             color: $branco;
                             text-decoration: none !important;                            
                             @include text-shadow(1px, 1px, 2px, $preto); 

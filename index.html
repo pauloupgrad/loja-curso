@@ -10,18 +10,19 @@
 <body>
     <!-- Header -->
    <header class="container-fluid d-flex align-items-center">
-       <section class="container">
-           <article class="row d-flex align-items-center">
-                <!-- logo marca -->
-                <div class="logo col-md-2 d-flex align-items-center">                   
+       <section class="container p-0">
+           <article class="row">
+                <!-- logo marca -->                                  
+                <a href="#" class="col-md-2 d-flex align-items-center">
                     <img class="img-fluid" src="./assets/images/sacola-white.png" alt="Imagem do logo">                                     
-                    <a href="#">Vida Saúdavel</a>
-                </div>
+                    Vida Saúdavel
+                </a>
+                
                 <!-- end logo marca --> 
                 <!-- logo marca -->
-                <form action="" class="col-md-6">
+                <form action="#" class="col-md-6 d-flex align-items-center">
                     <input type="search" name="s" placeholder="Procure por aqui ...">
-                    <button type="submit" class="btn-search">
+                    <button type="submit" class="btn-search d-flex align-items-center">
                     <i class="fas fa-search"></i>
                     </button>
                 </form>
@@ -41,10 +42,33 @@
        </section>
    </header>
    <!-- End Header -->
+   <!-- Navegação do site -->
+   <nav class="container-fluid nav-produtos">
+        <section class="container">
+            <ul class="nav row">
+                <li class="nav-item col-md-2 d-flex align-items-center">
+                    <a href="#"><i class="fas fa-bars"></i> Moda Feminina</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#">Lançamentos</a></li>
+                        <li class="nav-item"><a href="#">Plus Size</a></li>
+                        <li class="nav-item"><a href="#">Moda Praia</a></li>
+                        <li class="nav-item"><a href="#">Acessórios</a></li>
+                        <li class="nav-item"><a href="#">Produtos</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item col-md-2  d-flex align-items-center">
+                    <a href="#"><i class="fas fa-bars"></i> Calçados</a>
+                </li>
+            </ul>
+        </section>
+   </nav>
+
+   <!-- End navegação do site -->
    <!-- slide -->
-   <section class="slide-box">   
+   <section class="container p-0">   
     <article id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner slide-box">
         <figure class="carousel-item active">
             <img class="d-block w-100" src="./assets/images/f-1.jpg" alt="First slide">
         </figure>
